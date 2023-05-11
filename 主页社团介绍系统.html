@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>学校社团招新系统</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.14/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 添加自定义样式 */
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Montserrat', sans-serif;
+    }
+    header {
+      background-color: #17a2b8;
+    }
+    .logo {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .nav-links a {
+      color: #fff;
+      margin-right: 20px;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover {
+      color: #fff;
+      transform: translateY(-3px);
+    }
+    .hero {
+      background-image: url('https://picsum.photos/id/1068/1200/800');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(23, 162, 184, 0.7);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .hero-title {
+      font-size: 7rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .hero-subtitle {
+      font-size: 2rem;
+      color: #fff;
+      margin-top: 30px;
+    }
+    .cta-btn {
+      background-color: #fff;
+      color: #17a2b8;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.2s;
+      margin-top: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .cta-btn:hover {
+      background-color: #17a2b8;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+    .feature-card {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      transition: all 0.2s;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .feature-card:hover {
+      transform: translateY(-3px);
+    }
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #17a2b8;
+    }
+    .feature-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .feature-description {
+      font-size: 1.2rem;
+      color: #6c757d;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      transition: all 0.2s;
+      margin-top: 50px;
+    }
+    .form-container:hover {
+      transform: translateY(-3px);
+    }
+    .form-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      resize: none;
+    }
+    .form-submit {
+      background-color: #17a2b8;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.2s;
+      margin-top: 30px;
+    }
+    .form-submit:hover {
+      background-color: #fff;
+      color: #17a2b8;
+      transform: translateY(-3px);
+    }
+    footer {
+      background-color: #17a2b8;
+      color: #fff;
+      padding: 50px;
+    }
+    .footer-logo {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .social-links a {
+      font-size: 1.2rem;
+      margin-right: 20px;
+      color: #fff;
+      transition: all 0.2s;
+    }
+    .social-links a:hover {
+      color: #fff;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="py-3">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="logo">
+        学校社团招新系统
+      </div>
+      <div class="nav-links">
+        <a href=" ">首页</a>
+        <a href="#">关于</a>
+        <a href="#">联系我们</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <h1 class="hero-title">加入一个社团，<br>找到你的归属</h1>
+    <p class="hero-subtitle">浏览我们的社团列表，找到一个适合你的社团</p >
+    <a href="#" class="cta-btn">查看社团列表</a>
+  </section>
+
+  <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="feature-card">
+      <a href="https://test-orcin-sigma-62.vercel.app/">
+      <i class="feature-icon fas fa-bullhorn"></i>
+      <h3 class="feature-title">发现社团</h3>
+      <p class="feature-description">浏览我们的社团列表，找到一个适合你的社团</p ></a>
+    </div>
+
+    <div class="feature-card">
+      <a href="https://super-octo-telegram.vercel.app/">
+      <i class="feature-icon fas fa-thumbs-up"></i>
+      <h3 class="feature-title">参与活动</h3>
+      <p class="feature-description">参加社团活动，结交新朋友，扩展你的兴趣爱好</p ></a>
+    </div>
+    <div class="feature-card">
+     <a href="https://glowing-invention.vercel.app/">
+        <i class="feature-icon fas fa-user-plus"></i>
+        <h3 class="feature-title">创建社团</h3>
+        <p class="feature-description">提交你的申请，创造你自己的社团</p ></a>
+      </div>
+  </section>
+  
+  <script src="https://kit.fontawesome.com/06a651c8da.js" crossorigin="anonymous"></script>
+  <footer>
+		<p>版权所有 © 6班320团队</p>
+	</footer>
+</body>
+
+</html>
